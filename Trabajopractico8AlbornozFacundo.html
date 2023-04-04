@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio Formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<h1>Formulario de registro</h1>
+	<form>
+		<label for="nombre">Nombre completo:</label><br>
+		<input type="text" id="nombre" name="nombre"><br>
+
+		<label for="sexo">Sexo:</label><br>
+		<select>
+			<option value="masculino">Masculino</option>
+			<option value="femenino">Femenino</option>
+			<option value="otro">Otro</option>
+		</select><br>
+
+		<label for="edad">Edad:</label><br>
+		<input type="radio" id="menor" name="edad" value="menor">
+		<label for="menor">Menor de 18 años</label><br>
+		<input type="radio" id="mayor" name="edad" value="mayor">
+		<label for="mayor">Mayor de 18 años</label><br>
+
+		<label for="idiomas">Idiomas:</label><br>
+		<select id="idiomas" name="idiomas" multiple>
+			<option value="ingles">Inglés</option>
+			<option value="frances">Francés</option>
+			<option value="aleman">Alemán</option>
+			<option value="holandes">Holandés</option>
+		</select><br>
+
+		<label for="extras">Extras:</label><br>
+		<input type="checkbox" id="auto" name="extras[]" value="auto">
+		<label for="auto">Auto</label><br>
+		<input type="checkbox" id="camioneta" name="extras[]" value="camioneta">
+		<label for="camioneta">Camioneta</label><br>
+		<input type="checkbox" id="camion" name="extras[]" value="camion">
+		<label for="camion">Camión</label><br>
+
+		<label for="comentario">Comentario:</label><br>
+		<textarea id="comentario" name="comentario"></textarea><br>
+
+		<input type="submit" value="Enviar datos">
+		<input type="reset" value="Borrar datos">
+	</form>
+</body>
+</html>
